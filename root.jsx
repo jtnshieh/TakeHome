@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Congrats from './congrats';
+import App from './app';
+// import Header from './frontend/header';
 
 document.addEventListener("DOMContentLoaded", () => {
 	const root = document.getElementById("root");
-	ReactDOM.render(<Congrats/>, root);
+	ReactDOM.render(<App/>, root);
 });
