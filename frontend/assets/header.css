@@ -1,0 +1,33 @@
+body {
+  color: white;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 5px;
+}
+
+.header-left {
+  display: flex;
+}
+
+.Tawkify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  line-height: 45px;
+}
+
+.links > h3 {
+  padding: 3px;
+}
