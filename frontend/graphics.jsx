@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/graphics.css';
-import Image from './assets/sparkler.jpg';
+import Image from './assets/images/sparkler.jpg';
 
 const Graphics  = () => (
   <div className="graphics">
