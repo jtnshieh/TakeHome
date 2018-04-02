@@ -1,5 +1,6 @@
 import React from 'react';
 import './assets/header.css';
+// import headerImage from './assets/header_right_box.jpg';
 
 const Header  = () => (
   <div className = "header">
@@ -13,9 +14,13 @@ const Header  = () => (
       </div>
     </div>
     <div className = "header-right">
-      <h3>(888)494-7280</h3>
-      <div>
-
+      <h3 className = "number">(888)494-7280</h3>
+      <div className = "chat-button">
+        <i className="fas fa-phone" data-fa-transform="rotate-90"></i>
+        <div>
+          <span>Chat with a love expert</span>
+          <span>CLICK HERE FOR FREE SCREENING</span>
+        </div>
       </div>
     </div>
   </div>

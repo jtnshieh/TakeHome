@@ -31,3 +31,19 @@ body {
 .links > h3 {
   padding: 3px;
 }
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chat-button {
+  display: flex;
+}
+
+.chat-button > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
