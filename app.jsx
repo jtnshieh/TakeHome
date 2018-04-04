@@ -16,31 +16,34 @@ const App = () => (
   <HashRouter>
     <div>
       <Switch>
-        <Route path='/form1' render={props =>
+        <Route exact path='/' render={props =>
           <div style={divStyle}>
             <Header/>
             <Graphics/>
-            <Navigation/>
+            <Navigation
+              step="1"/>
             <Form
               history={props.history}
               />
           </div>
         } />
-        <Route path='/form2' render={props =>
+        <Route exact path='/form2' render={props =>
           <div style={divStyle}>
             <Header/>
             <Graphics/>
-            <Navigation/>
+            <Navigation
+              step="2"/>
             <Form2
               history={props.history}
               />
           </div>
         } />
-      <Route path='/form3' render={props =>
+        <Route exact path='/form3' render={props =>
           <div style={divStyle}>
             <Header/>
             <Graphics/>
-            <Navigation/>
+            <Navigation
+              step="3"/>
             <Form3
               history={props.history}
               />
