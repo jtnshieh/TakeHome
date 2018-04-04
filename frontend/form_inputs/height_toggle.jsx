@@ -41,7 +41,7 @@ class HeightToggle extends React.Component {
   render() {
     return (
       <div>
-        <label className="switch">
+        <label className="switch" style={{marginTop:"78px"}}>
           <div
             className="yes-button"
             ref={(el) => {this.yesButton = el;}}

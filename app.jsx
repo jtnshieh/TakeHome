@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Switch } from 'react-router-dom';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 import Header from './frontend/header';
 import Graphics from './frontend/graphics';
 import Navigation from './frontend/navigation';
@@ -11,14 +11,18 @@ const divStyle = {
 };
 
 const App = () => (
-  <div>
-    <Header/>
-    <div style={divStyle}>
-      <Graphics/>
-      <Navigation/>
-      <Form/>
+  <HashRouter>
+    <div>
+      <Switch>
+        <div style={divStyle}>
+          <Header/>
+          <Graphics/>
+          <Navigation/>
+          <Form/>
+        </div>
+      </Switch>
     </div>
-  </div>
+  </HashRouter>
 );
 
 export default App;

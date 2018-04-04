@@ -9,9 +9,9 @@
 
 .progressbar li {
     list-style-type: none;
-    width: 25%;
+    width: 33.33%;
     float: left;
-    font-size: 12px;
+    font-size: 18px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -19,11 +19,11 @@
 }
 
 .progressbar li:before {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     content: counter(step);
     counter-increment: step;
-    line-height: 30px;
+    line-height: 40px;
     border: 2px solid lightgray;
     display: block;
     text-align: center;
@@ -38,7 +38,7 @@
     content: '';
     position: absolute;
     background-color: lightgray;
-    top: 15px;
+    top: 20px;
     left: -50%;
     z-index: -1;
 }

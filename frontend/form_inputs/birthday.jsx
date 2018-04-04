@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/form_inputs_css/birthday.css';
 
 class Location extends React.Component {
   constructor(props) {
@@ -21,11 +22,11 @@ class Location extends React.Component {
     return (
       <div>
         <h4>YOUR BIRTHDAY</h4>
-        <form>
-          <input type="text" value={this.state.value} onChange={this.handleChange('month')}/>
-          <input type="text" value={this.state.value} onChange={this.handleChange('day')}/>
-          <input type="text" value={this.state.value} onChange={this.handleChange('year')}/>
-        </form>
+        <div>
+          <input id="birthday-input" type="text" value={this.state.value} onChange={this.handleChange('month')}/>
+          <input id="birthday-input" type="text" value={this.state.value} onChange={this.handleChange('day')}/>
+          <input id="birthday-input" type="text" value={this.state.value} onChange={this.handleChange('year')}/>
+        </div>
         <p>Where are you located?</p>
       </div>
     );

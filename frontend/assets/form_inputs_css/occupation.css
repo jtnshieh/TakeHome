@@ -3,24 +3,23 @@
 }
 
 .textarea {
-  width: 200px;
   outline: none;
-  min-height: 20px;
+  min-height: 43px;
   padding: 0;
   box-shadow: none;
   display: block;
   overflow: hidden;
   transition: height 0.2s ease;
-  font: 400 16px system-ui;
 }
 
 .textarea--ghost {
-  opacity: 0.3;
+  width: 430px;
+  opacity: 0.5;
   display: block;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: inherit;
-
+  font-size: 17px;
   visibility: hidden;
   position: absolute;
   top: 0;

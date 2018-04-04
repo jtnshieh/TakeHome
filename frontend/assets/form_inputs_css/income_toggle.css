@@ -1,10 +1,11 @@
 .switch {
   display: flex;
   justify-content: center;
-  width: 130px;
-  height: 30px;
+  width: 140px;
+  height: 43px;
   color: white;
   font-size: 9px;
+  margin-top: 60px;
 }
 
 .yes-button {
@@ -12,7 +13,7 @@
   justify-content: center;
   align-items: center;
   background-color: #00B9D7;
-  width: 40px;
+  width: 70px;
 }
 
 .no-button {
@@ -20,5 +21,5 @@
   justify-content: center;
   align-items: center;
   background-color: #BCBEC0;
-  width: 50px;
+  width: 70px;
 }

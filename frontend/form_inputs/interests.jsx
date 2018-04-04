@@ -67,7 +67,7 @@ class Interests extends React.Component {
           {this.getExpandableField()}
           {this.getGhostField()}
         </form>
-        <p>
+        <p style={{textAlign:"center", width:"400px"}}>
           Tell us a little more about yourself and what you like to do.
           We read everything, so please share!
         </p>

@@ -1,9 +1,7 @@
-.form-container {
-}
-
 .title {
   font-size: 30px;
   text-align: center;
+  font-weight: normal;
 }
 
 .subtitle {
@@ -30,18 +28,54 @@
   flex-direction: column;
   align-items: center;
   height: 200px;
-  width: 500px;
+  width: 520px;
 }
 
-.gender-thing {
-  background-color: red;
+.input-section > div > p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #696969;
 }
 
 .input-section h4 {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 .input-section select {
-  width: 400px;
+  width: 430px;
+  height: 43px;
+  font-size: 17px;
+  background-color: white;
+  border: 0px;
+  outline: 1px inset black;
+  outline-offset: -1px;
+}
+
+.input-section input {
+  width: 430px;
+  height: 43px;
+  font-size: 17px;
+  border: 1px solid black;
+}
+
+.input-section textarea {
+  width: 430px;
+  height: 43px;
+  font-size: 17px;
+  border: 1px solid black;
+}
+
+.button-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.continue-button {
+  height: 44px;
+  color: white;
+  background-color: #00B9D7;
+  width: 250px;
 }

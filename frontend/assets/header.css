@@ -6,13 +6,13 @@
 
 body {
   margin: 0px;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat';
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #0c0804;
   padding: 5px;
   color: white;
   font-family: inherit;
@@ -42,16 +42,28 @@ body {
 
 .header-right {
   display: flex;
+  justify-content: center;
+}
+
+.header-right > h3 {
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 30px;
+  margin-right: 3px;
+  font-weight: normal;
 }
 
 .chat-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.chat-button > div {
+.chat-button > img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 80%;
+  width: 95%;
 }

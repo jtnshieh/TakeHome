@@ -14,11 +14,18 @@ import Interests from './form_inputs/interests';
 class Form extends React.Component {
   constructor(props) {
     super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log("hello");
+    // this.props.history.push('/feed');
   }
 
   render() {
     return (
-      <div className="form-container">
+      <div>
         <h2 className="title">Tell us a bit about yourself</h2>
         <h4 className="subtitle">
           Tell us a bit about yourself and who you'd like to meet.
@@ -50,6 +57,14 @@ class Form extends React.Component {
             <IncomeToggle/>
             <Interests/>
           </div>
+        </div>
+        <div className="button-wrapper">
+          <input
+            className="continue-button"
+            type="submit"
+            value="SAVE AND CONTINUE"
+            onClick={this.handleSubmit}
+            />
         </div>
       </div>
     );
