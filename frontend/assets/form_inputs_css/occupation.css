@@ -1,0 +1,27 @@
+.occupation-container {
+  position: relative;
+}
+
+.textarea {
+  width: 200px;
+  outline: none;
+  min-height: 20px;
+  padding: 0;
+  box-shadow: none;
+  display: block;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  font: 400 16px system-ui;
+}
+
+.textarea--ghost {
+  opacity: 0.3;
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: inherit;
+
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}

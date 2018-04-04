@@ -14,7 +14,7 @@ const Header  = () => (
       </div>
     </div>
     <div className = "header-right">
-      <h3 className = "number">(888)494-7280</h3>
+      <h3 className = "number">{String.fromCharCode(49) + "(888)494-7280"}</h3>
       <div className = "chat-button">
         <i className="fas fa-phone" data-fa-transform="rotate-90"></i>
         <div>

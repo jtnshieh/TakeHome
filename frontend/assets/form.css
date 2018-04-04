@@ -12,3 +12,36 @@
   font-weight: lighter;
   margin: 5px;
 }
+
+.input-sections {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+}
+
+.input-section > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 500px;
+}
+
+.gender-thing {
+  background-color: red;
+}
+
+.input-section h4 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.input-section select {
+  width: 400px;
+}

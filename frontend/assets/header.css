@@ -1,15 +1,12 @@
 @font-face {
   font-family: 'ProximaNova';
   src:
-  url(require("./frontend/assets/Proxima%20Nova/ProximaNova-Black.eot?#iefix")) format('embedded-opentype'), /* IE6-IE8 */
-  url(require("./frontend/assets/Proxima%20Nova/ProximaNova-Black.woff2")) format('woff2'), /* Super Modern Browsers */
-  url(require("./frontend/assets/Proxima%20Nova/ProximaNova-Black.woff")) format('woff'), /* Pretty Modern Browsers */
-  url(require("./frontend/assets/Proxima%20Nova/ProximaNova-Black.otf")) format('opentype');
+  url(require("./ProximaNova-Black.otf")) format('opentype');
 }
 
 body {
   margin: 0px;
-  font-family: 'ProximaNova';
+  font-family: 'Montserrat', sans-serif;;
 }
 
 .header {
@@ -18,6 +15,7 @@ body {
   background-color: black;
   padding: 5px;
   color: white;
+  font-family: inherit;
 }
 
 .header-left {
@@ -34,8 +32,8 @@ body {
 .links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 400px;
-  line-height: 45px;
 }
 
 .links > h3 {
