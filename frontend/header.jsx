@@ -1,11 +1,14 @@
 import React from 'react';
 import './assets/header.css';
 import headerImage from './assets/images/header_right_box.jpg';
+import Logo from './assets/images/tawkify_logo.png';
 
 const Header  = () => (
   <div className = "header">
     <div className = "header-left">
-      <h1 className = "Tawkify">Tawkify</h1>
+      <div className="Tawkify">
+        <img src={Logo}></img>
+      </div>
       <div className = "links">
         <h3>How it works</h3>
         <h3>FAQ</h3>

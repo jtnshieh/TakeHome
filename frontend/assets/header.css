@@ -26,7 +26,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5px;
+  align-items: center;
+}
+
+.Tawkify > img {
+  width: 92%;
 }
 
 .links {
