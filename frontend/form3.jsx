@@ -6,15 +6,10 @@ class Form3 extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
   }
 
   render() {
@@ -39,7 +34,19 @@ class Form3 extends React.Component {
           </p>
         </div>
         <div className="image-upload-area">
+          <i className="far fa-image fa-4x"></i>
+          <span>
+            Drag and drop a photo
+          </span>
         </div>
+        <input
+          className="file-button"
+          value="CHOOSE FILE"
+          readOnly/>
+        <p>
+          {"Your pictures must be 4 megabytes or smaller. If you have problems, please contact us at"
+            + String.fromCharCode(49) + "(646)791-3283"}
+        </p>
         <div className="button-wrapper">
           <input
             className="continue-button"
