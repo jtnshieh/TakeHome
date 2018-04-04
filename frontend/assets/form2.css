@@ -1,0 +1,25 @@
+.form2-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form2-box {
+  width: 400px;
+  height: 200px;
+}
+
+.button-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.continue-button {
+  height: 44px;
+  color: white;
+  background-color: #00B9D7;
+  width: 250px;
+}

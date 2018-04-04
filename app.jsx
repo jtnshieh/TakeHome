@@ -4,6 +4,8 @@ import Header from './frontend/header';
 import Graphics from './frontend/graphics';
 import Navigation from './frontend/navigation';
 import Form from './frontend/form';
+import Form2 from './frontend/form2';
+import Form3 from './frontend/form3';
 
 const divStyle = {
   display: "flex",
@@ -14,12 +16,36 @@ const App = () => (
   <HashRouter>
     <div>
       <Switch>
-        <div style={divStyle}>
-          <Header/>
-          <Graphics/>
-          <Navigation/>
-          <Form/>
-        </div>
+        <Route path='/form1' render={props =>
+          <div style={divStyle}>
+            <Header/>
+            <Graphics/>
+            <Navigation/>
+            <Form
+              history={props.history}
+              />
+          </div>
+        } />
+        <Route path='/form2' render={props =>
+          <div style={divStyle}>
+            <Header/>
+            <Graphics/>
+            <Navigation/>
+            <Form2
+              history={props.history}
+              />
+          </div>
+        } />
+      <Route path='/form3' render={props =>
+          <div style={divStyle}>
+            <Header/>
+            <Graphics/>
+            <Navigation/>
+            <Form3
+              history={props.history}
+              />
+          </div>
+        } />
       </Switch>
     </div>
   </HashRouter>

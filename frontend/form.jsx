@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
 import './assets/form.css';
 import Gender from './form_inputs/gender';
 import Location from './form_inputs/location';
@@ -19,8 +20,7 @@ class Form extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log("hello");
-    // this.props.history.push('/feed');
+    this.props.history.push('/form2');
   }
 
   render() {
@@ -71,4 +71,4 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+export default withRouter(Form);
