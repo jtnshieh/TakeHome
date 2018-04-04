@@ -35,6 +35,7 @@ class Height extends React.Component {
       <div>
         <h4>YOUR HEIGHT</h4>
         <select value={this.state.value} onChange={this.handleChange}>
+          <option value="" selected disabled hidden>Select</option>
           {this.heightsOptions()}
         </select>
         <p>What is your height?</p>

@@ -19,6 +19,7 @@ class Gender extends React.Component {
       <div>
         <h4>YOUR GENDER</h4>
         <select value={this.state.value} onChange={this.handleChange}>
+          <option value="" selected disabled hidden>Select</option>
           <option value="female">Female</option>
           <option value="male">Male</option>
         </select>

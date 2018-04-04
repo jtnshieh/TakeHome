@@ -39,6 +39,7 @@ class Income extends React.Component {
       <div>
         <h4>INCOME</h4>
         <select value={this.state.value} onChange={this.handleChange}>
+          <option value="" selected disabled hidden>Select</option>
           {this.incomeOptions()}
         </select>
         <p>Why? This is one form of an indicator...</p>
